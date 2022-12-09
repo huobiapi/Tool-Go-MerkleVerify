@@ -1,4 +1,4 @@
-# Huobi Verify Address
+# Huobi Merkle Verify Tool
 
 ## Background
 
