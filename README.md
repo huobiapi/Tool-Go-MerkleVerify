@@ -2,7 +2,7 @@
 
 ## Background
 
-Huobi launches [Proof of Reserves (PoR)]() to improve the security and transparency of user's assets. These tools will allow
+Huobi launches [Proof of Reserves (PoR)](https://www.huobi.com/zh-cn/finance/merkle/) to improve the security and transparency of user's assets. These tools will allow
 you to verify the validity of your assets in the merkle sum tree by verify merkle proof file, in order to confirm your assets in Huobi.
 
 ## Introduction
