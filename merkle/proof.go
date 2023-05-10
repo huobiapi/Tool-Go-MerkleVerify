@@ -47,7 +47,7 @@ func VerifyProof(m *PathNodes) (bool, error) {
 	root := m.Path[0]
 
 	fmt.Println(fmt.Sprintf("Rebuild root BTC balance : %s, root BTC balance in proof file : %s ", node.Ub.Btc, root.Ub.Btc))
-	fmt.Println(fmt.Sprintf("Rebuild root ETH balance : %s, root ETH balance in proof file: %s ", node.Ub.Eth, root.Ub.Eth))
+	fmt.Println(fmt.Sprintf("Rebuild root ETH+BETH balance : %s, root ETH+BETH balance in proof file: %s ", node.Ub.Eth, root.Ub.Eth))
 	fmt.Println(fmt.Sprintf("Rebuild root TRX balance : %s, root TRX balance in proof file: %s ", node.Ub.Trx, root.Ub.Trx))
 	fmt.Println(fmt.Sprintf("Rebuild root USDT balance : %s, root USDT balance in proof file: %s ", node.Ub.Usdt, root.Ub.Usdt))
 	fmt.Println(fmt.Sprintf("Rebuild root HT balance : %s, root HT balance in proof file: %s ", node.Ub.Ht, root.Ub.Ht))
