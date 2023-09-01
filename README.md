@@ -20,10 +20,13 @@ Install dependencies
 
 build
 ```shell
- make
+ make merkle_verify
 ```
 
 run
 ```shell
 ./build/MerkleVerify --file ./merkle_sum_proof.json
 ```
+
+# Huobi Merkle Verify Tool V2
+
