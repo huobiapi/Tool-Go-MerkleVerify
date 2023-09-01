@@ -1,0 +1,9 @@
+{
+  "MysqlDataSource" : "admin:admin123@tcp(127.0.0.1:3306)/portest?parseTime=true",
+  "Redis": {
+    "Host": "127.0.0.1:6379",
+    "Type": "node"
+  },
+  "DbSuffix": "0",
+  "ZkKeyName": "zkpor5"
+}

@@ -1,0 +1,10 @@
+{
+  "MysqlDataSource" : "qwer123:796474aa@tcp(127.0.0.1:3306)/test_1?parseTime=true",
+  "DbSuffix": "0",
+  "TreeDB": {
+    "Driver": "redis",
+    "Option": {
+      "Addr": "127.0.0.1:6379"
+    }
+  }
+}

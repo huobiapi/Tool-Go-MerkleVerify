@@ -1,0 +1,12 @@
+{
+
+  "MysqlDataSource" : "test:127.0.0.1:3306)/jiangyue_test",
+  "Username" :        "test",
+  "Password" :        "123",
+  "Host" :           "127.0.0.1",
+  "Port" :           3306,
+  "Dbname":          "",
+  "Timeout":         "",
+  "DbSuffix":   "0",
+  "ZkKeyName": "/server/data/.keys/zkpor864"
+}

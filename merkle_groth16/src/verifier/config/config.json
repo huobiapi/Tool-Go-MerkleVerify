@@ -1,0 +1,847 @@
+{
+  "ProofTable": "src/verifier/config/proof0.csv",
+  "ZkKeyName": "zkpor5",
+  "CexAssetsInfo": [
+    {
+      "TotalBalance": 163,
+      "Symbol": "btc",
+      "Index": 0
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "eth",
+      "Index": 1
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "trx",
+      "Index": 2
+    },
+    {
+      "TotalBalance": 123812,
+      "Symbol": "usdt",
+      "Index": 3
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ht",
+      "Index": 4
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "1inch",
+      "Index": 5
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "aave",
+      "Index": 6
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ach",
+      "Index": 7
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ada",
+      "Index": 8
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "aidoge",
+      "Index": 9
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "algo",
+      "Index": 10
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "alice",
+      "Index": 11
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "amp",
+      "Index": 12
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ankr",
+      "Index": 13
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ant",
+      "Index": 14
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ape",
+      "Index": 15
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "api3",
+      "Index": 16
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "apt",
+      "Index": 17
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ar",
+      "Index": 18
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "arb",
+      "Index": 19
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "arpa",
+      "Index": 20
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "atom",
+      "Index": 21
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "avax",
+      "Index": 22
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "axs",
+      "Index": 23
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bal",
+      "Index": 24
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "band",
+      "Index": 25
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bat",
+      "Index": 26
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bcc",
+      "Index": 27
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bico",
+      "Index": 28
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "blur",
+      "Index": 29
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bnb",
+      "Index": 30
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bnt",
+      "Index": 31
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bob1",
+      "Index": 32
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bonk",
+      "Index": 33
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "bsv",
+      "Index": 34
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "btm",
+      "Index": 35
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "btt",
+      "Index": 36
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "c98",
+      "Index": 37
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "celo",
+      "Index": 38
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "cere",
+      "Index": 39
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "chr",
+      "Index": 40
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "chz",
+      "Index": 41
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "comp",
+      "Index": 42
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "core",
+      "Index": 43
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "cro",
+      "Index": 44
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "crv",
+      "Index": 45
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "cvc",
+      "Index": 46
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "dash",
+      "Index": 47
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "doge",
+      "Index": 48
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "dot",
+      "Index": 49
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "dta",
+      "Index": 50
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "dydx",
+      "Index": 51
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "egld",
+      "Index": 52
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ela",
+      "Index": 53
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "elf",
+      "Index": 54
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "enj",
+      "Index": 55
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ens",
+      "Index": 56
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "eos",
+      "Index": 57
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "etc",
+      "Index": 58
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ethpow",
+      "Index": 59
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "fil",
+      "Index": 60
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "floki",
+      "Index": 61
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "flow",
+      "Index": 62
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "fsn",
+      "Index": 63
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ftm",
+      "Index": 64
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ftt",
+      "Index": 65
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "gari",
+      "Index": 66
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "glmr",
+      "Index": 67
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "gmt",
+      "Index": 68
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "grt",
+      "Index": 69
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "gst",
+      "Index": 70
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "gxs",
+      "Index": 71
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "hbar",
+      "Index": 72
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "hive",
+      "Index": 73
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "hpt",
+      "Index": 74
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "husd",
+      "Index": 75
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "icp",
+      "Index": 76
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "imx",
+      "Index": 77
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "inj",
+      "Index": 78
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "iost",
+      "Index": 79
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "jasmy",
+      "Index": 80
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "jst",
+      "Index": 81
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "kava",
+      "Index": 82
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "knc",
+      "Index": 83
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "kripto",
+      "Index": 84
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ksm",
+      "Index": 85
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ladys",
+      "Index": 86
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "lamb",
+      "Index": 87
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ldo",
+      "Index": 88
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "lend",
+      "Index": 89
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "lina",
+      "Index": 90
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "link",
+      "Index": 91
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "lith",
+      "Index": 92
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "looks",
+      "Index": 93
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "lrc",
+      "Index": 94
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ltc",
+      "Index": 95
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "luna",
+      "Index": 96
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "mana",
+      "Index": 97
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "matic",
+      "Index": 98
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "mina",
+      "Index": 99
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "mkr",
+      "Index": 100
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "mln",
+      "Index": 101
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "mono",
+      "Index": 102
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "near",
+      "Index": 103
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "neo",
+      "Index": 104
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "nest",
+      "Index": 105
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "nft",
+      "Index": 106
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ngl",
+      "Index": 107
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "nym",
+      "Index": 108
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "oas",
+      "Index": 109
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ocean",
+      "Index": 110
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ogn",
+      "Index": 111
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "omg",
+      "Index": 112
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "one",
+      "Index": 113
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ont",
+      "Index": 114
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "op",
+      "Index": 115
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ordi",
+      "Index": 116
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "people",
+      "Index": 117
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "pepe",
+      "Index": 118
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "phb",
+      "Index": 119
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "pyr",
+      "Index": 120
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "qtum",
+      "Index": 121
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "reef",
+      "Index": 122
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ren",
+      "Index": 123
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "rlc",
+      "Index": 124
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "rndr",
+      "Index": 125
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "rsr",
+      "Index": 126
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ruff",
+      "Index": 127
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sand",
+      "Index": 128
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sdn",
+      "Index": 129
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "shib",
+      "Index": 130
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "snx",
+      "Index": 131
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sol",
+      "Index": 132
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "storj",
+      "Index": 133
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sui",
+      "Index": 134
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sun",
+      "Index": 135
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sushi",
+      "Index": 136
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "sxp",
+      "Index": 137
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "theta",
+      "Index": 138
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "tomi",
+      "Index": 139
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "ton",
+      "Index": 140
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "trb",
+      "Index": 141
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "turbo",
+      "Index": 142
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "uma",
+      "Index": 143
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "uni",
+      "Index": 144
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "usdc",
+      "Index": 145
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "usdd",
+      "Index": 146
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "vet",
+      "Index": 147
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "wallet",
+      "Index": 148
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "waves",
+      "Index": 149
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "wbt",
+      "Index": 150
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "wicc",
+      "Index": 151
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "win",
+      "Index": 152
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "wnxm",
+      "Index": 153
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "wojak",
+      "Index": 154
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xch",
+      "Index": 155
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xcn",
+      "Index": 156
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xem",
+      "Index": 157
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xlm",
+      "Index": 158
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xmr",
+      "Index": 159
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xrp",
+      "Index": 160
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "xtz",
+      "Index": 161
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "yfi",
+      "Index": 162
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "yfii",
+      "Index": 163
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "zec",
+      "Index": 164
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "zen",
+      "Index": 165
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "zil",
+      "Index": 166
+    },
+    {
+      "TotalBalance": 0,
+      "Symbol": "zrx",
+      "Index": 167
+    }
+  ]
+
+}
