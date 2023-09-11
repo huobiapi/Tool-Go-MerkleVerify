@@ -90,6 +90,8 @@ func (b GroupUserCircuit) Define(api API) error {
 		tempTotalCexAssets.NextCEXTotalEquity = api.Add(tempTotalCexAssets.NextCEXTotalEquity, b.UserInstructions[i].TotalEquity)
 		tempTotalCexAssets.NextCEXTotalDebt = api.Add(tempTotalCexAssets.NextCEXTotalDebt, b.UserInstructions[i].TotalDebt)
 		api.AssertIsLessOrEqual(tempTotalCexAssets.NextCEXTotalDebt, tempTotalCexAssets.NextCEXTotalEquity) //这一句写反了，导致约束不能通过，这里我们的灵魂将要删去
+		CheckValueInRange(api, b.UserInstructions[i].TotalEquity)
+		CheckValueInRange(api, b.UserInstructions[i].TotalDebt)
 		userAssetsCommitment := ComputeUserAssetsCommitment(api, userAssets)
 		accountHash := poseidon.Poseidon(api, b.UserInstructions[i].AccountIdHash, b.UserInstructions[i].TotalEquity, b.UserInstructions[i].TotalDebt, userAssetsCommitment)
 		actualAccountTreeRoot := UpdateMerkleProof(api, accountHash, b.UserInstructions[i].AccountProof[:], accountIndexHelper)

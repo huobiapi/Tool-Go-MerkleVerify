@@ -7,9 +7,9 @@ import (
 )
 
 const (
-	BatchCreateUserOpsCounts = 5  // batch size
-	AccountTreeDepth         = 28 // SMT height
-	AssetCounts              = 205
+	BatchCreateUserOpsCounts = 500 // batch size
+	AccountTreeDepth         = 28  // SMT height
+	AssetCounts              = 174
 	RedisLockKey             = "prover_mutex_key"
 )
 
@@ -20,14 +20,17 @@ var (
 	Uint64MaxValueFr              = new(fr.Element).SetBigInt(Uint64MaxValueBigInt)                       // 2^64
 	Uint64MaxValueFrSquare        = new(fr.Element).SetBigInt(Uint64MaxValueBigIntSquare)                 // 2^128
 	AssetTypeForTwoDigits         = map[string]bool{
-		"BTTC":  true,
-		"SHIB":  true,
-		"LUNC":  true,
-		"XEC":   true,
-		"WIN":   true,
-		"BIDR":  true,
-		"SPELL": true,
-		"HOT":   true,
-		"DOGE":  true,
+		"ladys":    true,
+		"brise":    true,
+		"caw":      true,
+		"nft":      true,
+		"bonk":     true,
+		"xen":      true,
+		"lovely":   true,
+		"btt":      true,
+		"aidoge":   true,
+		"babydoge": true,
+		"shib":     true,
+		"pepe":     true,
 	}
 )

@@ -118,7 +118,7 @@ func main() {
 		prevCexAssetListCommitments := make([][]byte, 2)
 		prevAccountTreeRoots := make([][]byte, 2)
 		// depth-28 empty account tree root
-		emptyAccountTreeRoot, err := hex.DecodeString("08030a5616bdd248a983dd1f994f557361c742cc4adaa2618275fbc35a9bdc24")
+		emptyAccountTreeRoot, err := hex.DecodeString("2787c6e55c2da2a73e57628e70386add83fd42cb4da4c401269381e918944558")
 		//0118925954da77d1a4b241fd163e4373e2265c515cfa60af7fcd28c8cb9ad58a
 		if err != nil {
 			fmt.Println("wrong empty empty account tree root")
