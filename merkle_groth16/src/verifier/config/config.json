@@ -1,6 +1,6 @@
 {
   "ProofTable": "src/verifier/config/proof0.csv",
-  "ZkKeyName": "zkpor5",
+  "ZkKeyName": "zkpor500",
   "CexAssetsInfo": [
     {
       "TotalBalance": 163,

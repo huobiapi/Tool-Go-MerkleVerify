@@ -277,8 +277,16 @@ func ReadUserDataFromCsvFile(name string) ([]AccountInfo, []CexAssetInfo, error)
 
 		multiplier := int64(100000000)
 		for j := 0; j < AssetCounts; j++ {
-			balance, err := ConvertFloatStrToInt64(data[i][j+2], multiplier)
+			var balance int64
+			var err error
+			if AssetTypeForTwoDigits[cexAssetsInfo[j].Symbol] {
+				balance, err = ConvertFloatStrToInt64(data[i][j+2], 100)
+			} else {
+				balance, err = ConvertFloatStrToInt64(data[i][j+2], multiplier)
+			}
+
 			if err != nil {
+				//fmt.Println(cexAssetsInfo)
 				fmt.Println("the symbol is ", cexAssetsInfo[j].Symbol)
 				fmt.Println("account uid:", data[i][1], "balance data wrong:", err.Error())
 				invalidCounts += 1

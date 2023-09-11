@@ -41,9 +41,9 @@ func CheckValueInRange(api API, value Variable) {
 }
 
 func Abs(api frontend.API, i frontend.Variable) frontend.Variable {
-	// _v + 2 ** 252 - bound
-	// _v should be less than 2 ** 252
-	// bound should be less than 2 ** 252
+	// _v + 2 ** 66 - bound
+	// _v should be less than 2 ** 66
+	// bound should be less than 2 ** 66
 	temp := api.Add(i, new(big.Int).Exp(new(big.Int).SetUint64(2), new(big.Int).SetInt64(int64(68-2)), nil))
 	bitsTemp := api.ToBinary(temp, 68)
 	cmResult := bitsTemp[68-2]
