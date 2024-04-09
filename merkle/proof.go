@@ -50,7 +50,7 @@ func VerifyProof(m *PathNodes) (bool, error) {
 	fmt.Println(fmt.Sprintf("Rebuild root ETH+BETH balance : %s, root ETH+BETH balance in proof file: %s ", node.Ub.Eth, root.Ub.Eth))
 	fmt.Println(fmt.Sprintf("Rebuild root TRX balance : %s, root TRX balance in proof file: %s ", node.Ub.Trx, root.Ub.Trx))
 	fmt.Println(fmt.Sprintf("Rebuild root USDT balance : %s, root USDT balance in proof file: %s ", node.Ub.Usdt, root.Ub.Usdt))
-	fmt.Println(fmt.Sprintf("Rebuild root HT balance : %s, root HT balance in proof file: %s ", node.Ub.Ht, root.Ub.Ht))
+	fmt.Println(fmt.Sprintf("Rebuild root HTX balance : %s, root HTX balance in proof file: %s ", node.Ub.Ht, root.Ub.Ht))
 	fmt.Println(fmt.Sprintf("Rebuild root hash: %s, root hash in proof file: %s ", node.Hash, root.Hash))
 	if node.Hash != root.Hash || !node.Ub.Equal(root.Ub) {
 		return false, nil
