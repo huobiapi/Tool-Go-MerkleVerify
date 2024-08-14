@@ -1,5 +1,7 @@
 .PHONY: build-local
 
+
+
 merkle_verify:
 	go build -o build/MerkleVerify main/main.go
 
