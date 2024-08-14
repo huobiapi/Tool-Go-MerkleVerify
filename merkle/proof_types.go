@@ -4,12 +4,13 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"encoding/hex"
-	"errors"
 	"fmt"
-	"github.com/shopspring/decimal"
-	"log"
 	"strings"
+
+	"github.com/shopspring/decimal"
 )
+
+var Length int
 
 type JsonProofPath struct {
 	Path []*JsonProofNode `json:"data"`
@@ -31,6 +32,9 @@ type UserBalance struct {
 	Trx   string
 	Usdt  string
 	Ht    string
+	Xrp   string
+	Doge  string
+	Sol   string
 }
 
 type PathNode struct {
@@ -40,12 +44,18 @@ type PathNode struct {
 }
 
 func (t UserBalance) Equal(other UserBalance) bool {
-	return t.Btc == other.Btc &&
+	var result bool
+	result = t.Btc == other.Btc &&
 		t.Eth == other.Eth &&
 		t.Trx == other.Trx &&
 		t.Usdt == other.Usdt &&
 		t.Ht == other.Ht
-
+	if Length > 5 {
+		result = result && t.Xrp == other.Xrp &&
+			t.Doge == other.Doge &&
+			t.Sol == other.Sol
+	}
+	return result
 }
 
 func (t UserBalance) Add(other UserBalance) (UserBalance, error) {
@@ -95,14 +105,44 @@ func (t UserBalance) Add(other UserBalance) (UserBalance, error) {
 	if _, err := h.Write([]byte(t.UHash + other.UHash)); err != nil {
 		return UserBalance{}, err
 	}
-	return UserBalance{
+	resultUB := UserBalance{
 		UHash: hex.EncodeToString(h.Sum(nil)),
-		Btc:   fmt.Sprintf("%s", btc1.Add(btc2).RoundDown(8).String()),
-		Eth:   fmt.Sprintf("%s", eth1.Add(eth2).RoundDown(8).String()),
-		Trx:   fmt.Sprintf("%s", trx1.Add(trx2).RoundDown(8).String()),
-		Usdt:  fmt.Sprintf("%s", usdt1.Add(usdt2).RoundDown(8).String()),
-		Ht:    fmt.Sprintf("%s", ht1.Add(ht2).RoundDown(8).String()),
-	}, nil
+		Btc:   btc1.Add(btc2).RoundDown(8).String(),
+		Eth:   eth1.Add(eth2).RoundDown(8).String(),
+		Trx:   trx1.Add(trx2).RoundDown(8).String(),
+		Usdt:  usdt1.Add(usdt2).RoundDown(8).String(),
+		Ht:    ht1.Add(ht2).RoundDown(8).String(),
+	}
+	if Length > 5 {
+		xrp1, err := decimal.NewFromString(t.Xrp)
+		if err != nil {
+			return UserBalance{}, err
+		}
+		doge1, err := decimal.NewFromString(t.Doge)
+		if err != nil {
+			return UserBalance{}, err
+		}
+		sol1, err := decimal.NewFromString(t.Sol)
+		if err != nil {
+			return UserBalance{}, err
+		}
+		xrp2, err := decimal.NewFromString(other.Xrp)
+		if err != nil {
+			return UserBalance{}, err
+		}
+		doge2, err := decimal.NewFromString(other.Doge)
+		if err != nil {
+			return UserBalance{}, err
+		}
+		sol2, err := decimal.NewFromString(other.Sol)
+		if err != nil {
+			return UserBalance{}, err
+		}
+		resultUB.Xrp = xrp1.Add(xrp2).RoundDown(8).String()
+		resultUB.Doge = doge1.Add(doge2).RoundDown(8).String()
+		resultUB.Sol = sol1.Add(sol2).RoundDown(8).String()
+	}
+	return resultUB, nil
 }
 
 func NewPath(lNode *PathNode, rNode *PathNode) (*PathNode, error) {
@@ -111,7 +151,7 @@ func NewPath(lNode *PathNode, rNode *PathNode) (*PathNode, error) {
 		return nil, err
 	}
 
-	hash, err := hash256(fmt.Sprintf("%s%s%s%s%s%s%s", lNode.Hash, rNode.Hash, a.Btc, a.Eth, a.Trx, a.Usdt, a.Ht), sha256.New)
+	hash, err := hash256(fmt.Sprintf("%s%s%s%s%s%s%s%s%s%s", lNode.Hash, rNode.Hash, a.Btc, a.Eth, a.Trx, a.Usdt, a.Ht, a.Xrp, a.Doge, a.Sol), sha256.New)
 	if err != nil {
 		return nil, err
 	}
@@ -128,26 +168,19 @@ func (jNode *JsonProofNode) JsonProofNodeToPathNode() *PathNode {
 	ret.Hash = jNode.Hash
 	ret.R = jNode.R
 	ret.Ub.UHash = jNode.UHash
-
 	bss := strings.Split(jNode.Balances, ",")
-	if len(bss) != 5 {
-		log.Fatal(errors.New("invalid balance"))
-	}
+	Length = len(bss)
 
-	btc := strings.Split(bss[0], ":")
-	eth := strings.Split(bss[1], ":")
-	trx := strings.Split(bss[2], ":")
-	usdt := strings.Split(bss[3], ":")
-	ht := strings.Split(bss[4], ":")
-	if len(btc) != 2 || len(eth) != 2 || len(trx) != 2 || len(usdt) != 2 || len(ht) != 2 {
-		log.Fatal(errors.New("invalid balance"))
+	ret.Ub.Btc = strings.Split(bss[0], ":")[1]
+	ret.Ub.Eth = strings.Split(bss[1], ":")[1]
+	ret.Ub.Trx = strings.Split(bss[2], ":")[1]
+	ret.Ub.Usdt = strings.Split(bss[3], ":")[1]
+	ret.Ub.Ht = strings.Split(bss[4], ":")[1]
+	if Length > 5 {
+		ret.Ub.Xrp = strings.Split(bss[5], ":")[1]
+		ret.Ub.Doge = strings.Split(bss[6], ":")[1]
+		ret.Ub.Sol = strings.Split(bss[7], ":")[1]
 	}
-
-	ret.Ub.Btc = btc[1]
-	ret.Ub.Eth = eth[1]
-	ret.Ub.Trx = trx[1]
-	ret.Ub.Usdt = usdt[1]
-	ret.Ub.Ht = ht[1]
 
 	return ret
 }
