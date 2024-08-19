@@ -46,15 +46,8 @@ func VerifyProof(m *PathNodes) (bool, error) {
 
 	root := m.Path[0]
 
-	fmt.Printf("Rebuild root BTC balance : %s, root BTC balance in proof file : %s \n", node.Ub.Btc, root.Ub.Btc)
-	fmt.Printf("Rebuild root ETH+BETH+stETH balance : %s, root ETH+BETH+stETH balance in proof file: %s \n", node.Ub.Eth, root.Ub.Eth)
-	fmt.Printf("Rebuild root TRX balance : %s, root TRX balance in proof file: %s \n", node.Ub.Trx, root.Ub.Trx)
-	fmt.Printf("Rebuild root USDT+stUSDT+aETHUSDT balance : %s, root USDT+stUSDT+aETHUSDT balance in proof file: %s \n", node.Ub.Usdt, root.Ub.Usdt)
-	fmt.Printf("Rebuild root HTX balance : %s, root HTX balance in proof file: %s \n", node.Ub.Ht, root.Ub.Ht)
-	if Length > 5 {
-		fmt.Printf("Rebuild root XRP balance : %s, root XRP balance in proof file: %s \n", node.Ub.Xrp, root.Ub.Xrp)
-		fmt.Printf("Rebuild root DOGE balance : %s, root DOGE balance in proof file: %s \n", node.Ub.Doge, root.Ub.Doge)
-		fmt.Printf("Rebuild root SOL balance : %s, root SOL balance in proof file: %s \n", node.Ub.Sol, root.Ub.Sol)
+	for i := 0; i < Length; i++ {
+		fmt.Printf("Rebuild root %s balance : %s, root %s balance in proof file : %s \n", CoinList[i], node.Ub.Coins[CoinList[i]], CoinList[i], root.Ub.Coins[CoinList[i]])
 	}
 
 	fmt.Printf("Rebuild root hash: %s, root hash in proof file: %s \n", node.Hash, root.Hash)
